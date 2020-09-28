@@ -3,7 +3,7 @@
     $first = $user.GivenName.Substring(0,1)
     $last = $user.Surname.Substring(0,1)
 
-    $newpassword = "#Menlo4$first$last!"
+    $newpassword = ""
     $securepassword = ConvertTo-SecureString $newpassword -AsPlainText -force
 
     try {
